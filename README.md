@@ -56,7 +56,7 @@ Object-Oriented Design (OOD) and Object-Oriented Programming (OOP) are closely r
 
 High coupling combined with low cohesion often leads to fragile and difficult-to-maintain systems. Conversely, striving for low coupling and high cohesion makes software easier to manage, test, and expand.
 
-### 2.2. The Four Pillars of OOD
+### 2.3. The Four Pillars of OOD
 These principles guide developers in creating flexible, reusable, and maintainable software.
 
 - **Abstraction** allows you to use a class without understanding its intricate details, much like driving a car without knowing the mechanics of its operation. Abstraction helps to reduce complexity and enhance the focus on interaction rather than implementation.
