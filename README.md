@@ -226,13 +226,13 @@ classDiagram
 
 ```
 
-# Plus+ : UML Cheat-Sheet
+# 4. Plus+ : UML Cheat-Sheet
 
 A comprehensive guide to designing UML diagrams in Markdown using Mermaid. This cheat-sheet covers the syntax for creating classes, interfaces, abstract classes, and the relationships between them.
 
-## 1. Basic Syntax
+## 4.1. Basic Syntax
 
-### 1.1. Class Definition
+### 4.1.1. Class Definition
 ```mermaid
 classDiagram
     class ClassName {
@@ -241,7 +241,7 @@ classDiagram
     }
 ```
 
-### 1.2. Abstract Class Definition
+### 4.1.2. Abstract Class Definition
 ```mermaid
 classDiagram
     class AbstractClassName{
@@ -250,7 +250,7 @@ classDiagram
     }
 ```
 
-### 1.3. Interface Definition
+### 4.1.3. Interface Definition
 ```mermaid
 classDiagram
     class IInterfaceName{
@@ -259,53 +259,53 @@ classDiagram
     }
 ```
 
-## 2. Relationships
+## 4.2. Relationships
 
-### 2.1. Class - Class (Inheritance)
+### 4.2.1. Class - Class (Inheritance)
 ```mermaid
 classDiagram
     BaseClass <|-- DerivedClass : inherits
 ```
 
-### 2.2. Class - Interface (Implementation)
+### 4.2.2. Class - Interface (Implementation)
 ```mermaid
 classDiagram
     InterfaceName <|.. ImplementingClass : implements
 ```
 
-### 2.3. Abstract Class-Class (Inheritance)
+### 4.2.3. Abstract Class-Class (Inheritance)
 ```mermaid
 classDiagram
     AbstractClassName <|-- ConcreteClass : inherits
 ```
 
-## 3. Association
+## 4.3. Association
 
-### 3.1. Bidirectional
+### 4.3.1. Bidirectional
 ```mermaid
 classDiagram
     Class1 "1" -- "many" Class2 : Association
 ```
 
-### 3.2. Unidirectional
+### 4.3.2. Unidirectional
 ```mermaid
 classDiagram
     Class1 --> Class2 : Association
 ```
 
-### 3.3. Aggregation (Has-A Relationship)
+### 4.3.3. Aggregation (Has-A Relationship)
 ```mermaid
 classDiagram
     ContainerClass o-- ContainedClass
 ```
 
-### 3.4. Composition (Stronger Has-A Relationship)
+### 4.3.4. Composition (Stronger Has-A Relationship)
 ```mermaid
 classDiagram
     ContainerClass *-- ContainedClass
 ```
 
-### 3.5. Dependency
+### 4.3.5. Dependency
 ```mermaid
 classDiagram
     Class1 ..> Class2 : dependency
