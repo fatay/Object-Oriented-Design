@@ -16,7 +16,7 @@ Below is an article that contains the necessary details for an introduction to o
 
 3. [Difference Between Interface and Abstract Class](#3-difference-between-interface-and-abstract-class)
 
-4. [UML Cheat-Sheet](#uml-cheat-sheet)
+4. [UML Cheat-Sheet](#plus--uml-cheat-sheet)
    - [4.1. Basic Syntax](#41-basic-syntax)
    - [4.2. Relationships](#42-relationships)
    - [4.3. Association](#43-association)
