@@ -13,7 +13,14 @@ Object-Oriented Design (OOD) and Object-Oriented Programming (OOP) are closely r
 
 ## 2. Core Concepts in OOD
 
-### 2.1. Coupling and Cohesion
+### 2.1. Class, Interface and Abstract Class
+- **Class** A class in object-oriented programming is a blueprint from which individual objects are created. It encapsulates data for the object and methods to manipulate that data. Classes define the properties (data) and behaviors (methods) that their instances (objects) will have.
+
+- **Interface** An interface is a programming structure that defines the methods a class must implement, without providing the implementation itself. Interfaces are used to establish a formal contract that a class agrees to uphold, which means any class that implements the interface agrees to implement all its methods as specified.
+
+- **Abstract Class** An abstract class is a class that cannot be instantiated on its own and must be inherited by other classes. It can include abstract methods (which have no body) that must be implemented by derived classes, as well as concrete methods (which have implementations). This allows abstract classes to define template methods and partial implementations where applicable.
+
+### 2.2. Coupling and Cohesion
 - **Coupling** describes how dependent classes or modules are on each other. Lower coupling is preferable because it means that changes in one area of the software have minimal impact on other parts, making the system easier to manage and evolve.
   
 - **Cohesion** measures how closely the elements within a single module or class work together to achieve a common goal. A highly cohesive class focuses on a single task, enhancing understandability and reducing complexity.
