@@ -14,7 +14,7 @@ Below is an article that contains the necessary details for an introduction to o
    - [2.2. Coupling and Cohesion](#22-coupling-and-cohesion)
    - [2.3. The Four Pillars of OOD](#23-the-four-pillars-of-ood)
 
-3. [Difference Between Interface and Abstract Class](#difference-between-interface-and-abstract-class)
+3. [Difference Between Interface and Abstract Class](#3-difference-between-interface-and-abstract-class)
 
 4. [UML Cheat-Sheet](#uml-cheat-sheet)
    - [4.1. Basic Syntax](#41-basic-syntax)
