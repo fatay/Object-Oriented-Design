@@ -20,6 +20,15 @@ Object-Oriented Design (OOD) and Object-Oriented Programming (OOP) are closely r
 
 - **Abstract Class** An abstract class is a class that cannot be instantiated on its own and must be inherited by other classes. It can include abstract methods (which have no body) that must be implemented by derived classes, as well as concrete methods (which have implementations). This allows abstract classes to define template methods and partial implementations where applicable.
 
+| **Feature**         | **Class**                                                        | **Interface**                                                        | **Abstract Class**                                                 |
+|---------------------|------------------------------------------------------------------|----------------------------------------------------------------------|--------------------------------------------------------------------|
+| **Instantiation**   | Can be instantiated directly if it has a constructor.            | Cannot be instantiated directly.                                     | Cannot be instantiated directly.                                   |
+| **Implementation**  | Contains both data and method implementations.                  | Cannot contain any method implementations.                          | Can contain both abstract and concrete methods.                    |
+| **Inheritance**     | Can inherit from another class (single inheritance).             | Can inherit multiple interfaces.                                     | Can be inherited but cannot inherit multiple classes.              |
+| **Methods**         | Can have full method definitions.                                | Only contains method signatures (no bodies).                         | Can have both abstract methods and full methods.                   |
+| **Usage**           | Used to create detailed, fully-functional objects.               | Used to specify a contract that implementing classes must follow.    | Used as a base class with partial implementation to share among multiple derived classes. |
+
+
 ### 2.2. Coupling and Cohesion
 - **Coupling** describes how dependent classes or modules are on each other. Lower coupling is preferable because it means that changes in one area of the software have minimal impact on other parts, making the system easier to manage and evolve.
   
@@ -150,7 +159,7 @@ Example : Polymporphism of Payment Methods
 
 With these principles in mind, developers can build software that is robust, easy to maintain, and scalable. Object-oriented design is not just about using specific tools or languages; it's a way of thinking about and structuring your software to address complex problems with efficient solutions.
 
-## 3. Difference Between Abstract Class and Interface
+## 3. Difference Between Interface and Abstract Class
 | **Feature**              | **Interface**                                                                                    | **Abstract Class**                                                                         |
 |--------------------------|--------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------|
 | **Main Purpose**         | To define a contract that other classes must follow without providing any method bodies.         | To provide a partial implementation of a class which other classes can build upon.         |
@@ -160,3 +169,124 @@ With these principles in mind, developers can build software that is robust, eas
 | **Inheritance**          | A class can implement multiple interfaces, allowing for more flexible design via multiple inheritance of behavior. | A class can only inherit from one abstract class (in languages like Java and C#), restricting flexibility but allowing more comprehensive behavior sharing. |
 | **Accessibility Modifiers** | Members of an interface are implicitly public (in most languages).                              | Members can have varying levels of accessibility (public, protected, private).              |
 | **Use Cases**            | **Example:** A `PaymentProcessor` interface with a `processPayment` method can be implemented by different classes like `CreditCardProcessor`, `PayPalProcessor`, etc. This ensures that all payment processors follow the same procedure for processing payments. | **Example:** An abstract class `Animal` might contain method implementations like `eat` or `sleep` and abstract methods like `makeSound`. Classes like `Dog` and `Cat` would inherit from `Animal` and implement the `makeSound` method to specify how each animal species sounds. |
+
+
+```mermaid
+
+classDiagram
+    class IPaymentProcessor {
+        <<interface>>
+        +processPayment(amount: float) boolean
+    }
+    class CreditCardProcessor {
+        +processPayment(amount: float) boolean
+    }
+    class PayPalProcessor {
+        +processPayment(amount: float) boolean
+    }
+
+    IPaymentProcessor <|-- CreditCardProcessor : implements
+    IPaymentProcessor <|-- PayPalProcessor : implements
+
+    class Animal {
+        <<abstract>>
+        +eat() void
+        +sleep() void
+        +abstract makeSound() void
+    }
+    class Dog {
+        +makeSound() void
+    }
+    class Cat {
+        +makeSound() void
+    }
+
+    Animal <|-- Dog : inherits
+    Animal <|-- Cat : inherits
+
+```
+
+# Plus+ : UML Cheat-Sheet
+
+A comprehensive guide to designing UML diagrams in Markdown using Mermaid. This cheat-sheet covers the syntax for creating classes, interfaces, abstract classes, and the relationships between them.
+
+## Basic Syntax
+
+### Class Definition
+```mermaid
+classDiagram
+    class ClassName {
+      -privateAttribute : DataType
+      +publicMethod() ReturnType
+    }
+```
+
+### Abstract Class Definition
+```mermaid
+classDiagram
+    class AbstractClassName{
+        <<abstract>>
+        +abstractMethod() ReturnType
+    }
+```
+
+### Interface Definition
+```mermaid
+classDiagram
+    class IInterfaceName{
+        <<interface>>
+        +property: DataType
+    }
+```
+
+## Relationships
+
+### Class - Class (Inheritance)
+```mermaid
+classDiagram
+    BaseClass <|-- DerivedClass : inherits
+```
+
+### Class - Interface (Implementation)
+```mermaid
+classDiagram
+    InterfaceName <|.. ImplementingClass : implements
+```
+
+### Abstract Class-Class (Inheritance)
+```mermaid
+classDiagram
+    AbstractClassName <|-- ConcreteClass : inherits
+```
+
+## Association
+
+### Bidirectional
+```mermaid
+classDiagram
+    Class1 "1" -- "many" Class2 : Association
+```
+
+### Unidirectional
+```mermaid
+classDiagram
+    Class1 --> Class2 : Association
+```
+
+### Aggregation (Has-A Relationship)
+```mermaid
+classDiagram
+    ContainerClass o-- ContainedClass
+```
+
+### Composition (Stronger Has-A Relationship)
+```mermaid
+classDiagram
+    ContainerClass *-- ContainedClass
+```
+
+### Dependency
+```mermaid
+classDiagram
+    Class1 ..> Class2 : dependency
+```
