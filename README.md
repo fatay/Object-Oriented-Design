@@ -9,7 +9,7 @@ Below is an article that contains the necessary details for an introduction to o
    - [1.1. Definition](#11-definition)
    - [1.2. Difference Between Object-Oriented Design and Object-Oriented Programming](#12-difference-between-object-oriented-design-and-object-oriented-programming)
 
-2. [Core Concepts in OOD](#core-concepts-in-ood)
+2. [Core Concepts in OOD](#2-core-concepts-in-ood)
    - [2.1. Class, Interface and Abstract Class](#21-class-interface-and-abstract-class)
    - [2.2. Coupling and Cohesion](#22-coupling-and-cohesion)
    - [2.3. The Four Pillars of OOD](#23-the-four-pillars-of-ood)
