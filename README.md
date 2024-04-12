@@ -17,11 +17,20 @@ Below is an article that contains the necessary details for an introduction to o
 3. [Difference Between Interface and Abstract Class](#3-difference-between-interface-and-abstract-class)
 
 4. [UML Cheat-Sheet](#4-plus--uml-cheat-sheet)
-   - [4.1. Basic Syntax](#1-basic-syntax)
-   - [4.2. Relationships](#2-relationships)
-   - [4.3. Association](#3-association)
-
-
+   - [4.1. Basic Syntax](#41-basic-syntax)
+     - [4.1.1 Class Definition](#411-class-definition)
+     - [4.1.2 Abstract Class Definition](#412-abstract-class-definition)
+     - [4.1.3. Interface Definition](#413-interface-definition)
+   - [4.2. Relationships](#42-relationships)
+     - [4.2.1. Class - Class (Inheritance)](#421-class---class-inheritance)
+     - [4.2.2. 4.2.2. Class - Interface (Implementation)](#422-class---interface-implementation)
+     - [4.2.3. Abstract Class-Class (Inheritance)](#423-abstract-class-class-inheritance)
+   - [4.3. Association](#43-association)
+      - [4.3.1. Bidirectional](#431-bidirectional)
+      - [4.3.2. Unidirectional](#432-unidirectional)
+      - [4.3.3. Aggregation](#433-aggregation-has-a-relationship)
+      - [4.3.4. Composition](#434-composition-stronger-has-a-relationship)
+      - [4.3.5. Dependency](#435-dependency)
 
 ## 1. What is Object-Oriented Design?
 
