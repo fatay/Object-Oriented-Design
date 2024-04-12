@@ -3,6 +3,26 @@
 
 Below is an article that contains the necessary details for an introduction to object-oriented design. The UML diagrams have been prepared using [Mermaid](https://github.com/mermaid-js/mermaid).
 
+# Contents
+
+1. [Introduction to Object-Oriented Design](#introduction-to-object-oriented-design)
+   - [1.1. Definition](#11-definition)
+   - [1.2. Difference Between Object-Oriented Design and Object-Oriented Programming](#12-difference-between-object-oriented-design-and-object-oriented-programming)
+
+2. [Core Concepts in OOD](#core-concepts-in-ood)
+   - [2.1. Class, Interface and Abstract Class](#21-class-interface-and-abstract-class)
+   - [2.2. Coupling and Cohesion](#22-coupling-and-cohesion)
+   - [2.3. The Four Pillars of OOD](#23-the-four-pillars-of-ood)
+
+3. [Difference Between Interface and Abstract Class](#difference-between-interface-and-abstract-class)
+
+4. [UML Cheat-Sheet](#uml-cheat-sheet)
+   - [4.1. Basic Syntax](#41-basic-syntax)
+   - [4.2. Relationships](#42-relationships)
+   - [4.3. Association](#43-association)
+
+
+
 ## 1. What is Object-Oriented Design?
 
 ### 1.1. Definition
