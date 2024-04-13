@@ -250,6 +250,16 @@ classDiagram
     }
 ```
 
+```
+classDiagram
+    class ClassName {
+      -privateAttribute : DataType
+      +publicMethod() ReturnType
+    }
+```
+
+
+
 ### 4.1.2. Abstract Class Definition
 ```mermaid
 classDiagram
