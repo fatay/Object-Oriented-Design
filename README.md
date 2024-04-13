@@ -235,7 +235,7 @@ classDiagram
 
 ```
 
-# 4. Plus+ : UML Cheat-Sheet
+# 4. Plus : UML Cheat-Sheet Using Mermaid
 
 A comprehensive guide to designing UML diagrams in Markdown using Mermaid. This cheat-sheet covers the syntax for creating classes, interfaces, abstract classes, and the relationships between them.
 
@@ -269,6 +269,15 @@ classDiagram
     }
 ```
 
+```
+classDiagram
+    class AbstractClassName{
+        <<abstract>>
+        +abstractMethod() ReturnType
+    }
+```
+
+
 ### 4.1.3. Interface Definition
 ```mermaid
 classDiagram
@@ -278,6 +287,15 @@ classDiagram
     }
 ```
 
+```
+classDiagram
+    class IInterfaceName{
+        <<interface>>
+        +property: DataType
+    }
+```
+
+
 ## 4.2. Relationships
 
 ### 4.2.1. Class - Class (Inheritance)
@@ -286,8 +304,19 @@ classDiagram
     BaseClass <|-- DerivedClass : inherits
 ```
 
+```
+classDiagram
+    BaseClass <|-- DerivedClass : inherits
+```
+
+
 ### 4.2.2. Class - Interface (Implementation)
 ```mermaid
+classDiagram
+    InterfaceName <|.. ImplementingClass : implements
+```
+
+```
 classDiagram
     InterfaceName <|.. ImplementingClass : implements
 ```
@@ -298,10 +327,21 @@ classDiagram
     AbstractClassName <|-- ConcreteClass : inherits
 ```
 
+```
+classDiagram
+    AbstractClassName <|-- ConcreteClass : inherits
+```
+
+
 ## 4.3. Association
 
 ### 4.3.1. Bidirectional
 ```mermaid
+classDiagram
+    Class1 "1" -- "many" Class2 : Association
+```
+
+```
 classDiagram
     Class1 "1" -- "many" Class2 : Association
 ```
@@ -312,8 +352,18 @@ classDiagram
     Class1 --> Class2 : Association
 ```
 
+```
+classDiagram
+    Class1 --> Class2 : Association
+```
+
 ### 4.3.3. Aggregation (Has-A Relationship)
 ```mermaid
+classDiagram
+    ContainerClass o-- ContainedClass
+```
+
+```
 classDiagram
     ContainerClass o-- ContainedClass
 ```
@@ -324,8 +374,18 @@ classDiagram
     ContainerClass *-- ContainedClass
 ```
 
+```
+classDiagram
+    ContainerClass *-- ContainedClass
+```
+
 ### 4.3.5. Dependency
 ```mermaid
+classDiagram
+    Class1 ..> Class2 : dependency
+```
+
+```
 classDiagram
     Class1 ..> Class2 : dependency
 ```
